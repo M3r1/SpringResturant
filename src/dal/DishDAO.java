@@ -1,6 +1,11 @@
 package dal;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
 import java.util.List;
+
 
 public class DishDAO implements DAO{
 
@@ -12,7 +17,20 @@ public class DishDAO implements DAO{
 
 	@Override
 	public int save(Object obj) throws Exception {
-		// TODO Auto-generated method stub
+//	       ArrayList<String> al=new ArrayList<String>();
+//	       al.add("Hello");
+//	       al.add("Hi");
+//	       al.add("Howdy");
+//
+//	       try{
+//	         FileOutputStream fos= new FileOutputStream("dishfile");
+//	         ObjectOutputStream oos= new ObjectOutputStream(fos);
+//	         oos.writeObject(al);
+//	         oos.close();
+//	         fos.close();
+//	       }catch(IOException ioe){
+//	            ioe.printStackTrace();
+//	        }
 		return 0;
 	}
 
