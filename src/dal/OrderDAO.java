@@ -11,21 +11,21 @@ public class OrderDAO implements DAO{
 	}
 
 	@Override
-	public int save(Object obj) throws Exception {
+	public boolean save(Object obj) throws Exception {
 		// TODO Auto-generated method stub
-		return 0;
+		return false;
 	}
 
 	@Override
-	public int update(Object obj) throws Exception {
+	public boolean update(Object obj) throws Exception {
 		// TODO Auto-generated method stub
-		return 0;
+		return false;
 	}
 
 	@Override
-	public int delete(int id) throws Exception {
+	public boolean delete(int id) throws Exception {
 		// TODO Auto-generated method stub
-		return 0;
+		return false;
 	}
 
 	@Override
