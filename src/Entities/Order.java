@@ -1,12 +1,14 @@
 package Entities;
 
 import java.util.ArrayList;
+import java.util.Date;
 
-public class Order {
+public class Order implements Comparable<Order>{
 	
 	private int id;
 	private int tableNum;
 	private ArrayList<Dish> tableDishes = new ArrayList<>();
+	private Date orderTime;
 
 	public Order() {
 	}
@@ -22,6 +24,10 @@ public class Order {
 	public int getTableNum() {
 		return tableNum;
 	}
+	
+	public Date getOrderTime() {
+		return orderTime;
+	}
 
 	public void setTableNum(int tableNum) {
 		this.tableNum = tableNum;
@@ -33,6 +39,10 @@ public class Order {
 
 	public void setTableDishes(ArrayList<Dish> tableDishes) {
 		this.tableDishes = tableDishes;
+	}
+	
+	public void setOrderTime(Date orderTime) {
+		this.orderTime = orderTime;
 	}
 	
 	public void addTableDish(Dish dish) {
@@ -73,6 +83,12 @@ public class Order {
 		if (tableNum != other.tableNum)
 			return false;
 		return true;
+	}
+
+	@Override
+	public int compareTo(Order o) {
+		return o.getOrderTime().compareTo(orderTime);
+		
 	}
 	
 	

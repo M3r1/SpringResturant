@@ -1,20 +1,35 @@
 package Entities;
 
-public class Dish {
+import java.io.Serializable;
+
+public class Dish implements Serializable{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	
 	private int id;
 	private String name;
 	private int price;
 	
 	public Dish() {
+		
 	}
 	
 
 	public Dish(int id) {
-	}
+		
+	}	
 	
+
+
 	public int getId() {
 		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getName() {

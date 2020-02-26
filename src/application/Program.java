@@ -11,7 +11,15 @@ public class Program {
 	public static void main(String[] args) {
 		DishDAO dao = new DishDAO();
 		try {
-			dao.save(new Dish());
+			Dish d = new Dish();
+			d.setName("b");
+			d.setPrice(5);
+			
+			
+			dao.save(d);
+
+
+
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -25,6 +33,7 @@ public class Program {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
 	}
 	
 }

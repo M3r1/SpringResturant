@@ -1,12 +1,14 @@
 package dal;
 
-import java.util.List;
+import java.util.ArrayList;
 
-public interface DAO {
+
+public interface DAO<T> {
 	
-	public List<Object> getAll() throws Exception;
-	public boolean save(Object obj) throws Exception;
-	public boolean update(Object obj) throws Exception;
+	public ArrayList<T> getAll() throws Exception;
+	public boolean save(T obj) throws Exception;
+	public boolean update(T obj) throws Exception;
 	public boolean delete(int id) throws Exception;
-	public Object get(int id) throws Exception;
+	public T get(int id) throws Exception;
+
 }
